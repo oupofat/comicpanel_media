@@ -1,0 +1,99 @@
+/* wiki links 
+http://marvelcinematicuniverse.wikia.com/wiki/Captain_America
+http://marvelcinematicuniverse.wikia.com/wiki/Hulk
+http://marvelcinematicuniverse.wikia.com/wiki/Thor
+http://marvelcinematicuniverse.wikia.com/wiki/Iron_Man
+https://en.wikipedia.org/wiki/World_War_Hulk
+http://marvelcinematicuniverse.wikia.com/wiki/Avengers
+
+*/
+
+/* wiki links for marvel heroes
+
+https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_film_actors
+http://marvelcinematicuniverse.wikia.com/wiki/Category:Heroes
+http://marvelcinematicuniverse.wikia.com/wiki/Category:Villains
+https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe_tie-in_comics
+
+*/
+
+/* font family code 
+font-family: 'Bangers', cursive;
+*/
+
+body {
+	background-color: darkred;
+	font-family: 'Bangers', cursive;
+}
+
+
+.navigation {
+	list-style: none;
+	margin: 0;
+
+	background: #3268bd;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: white;
+}
+
+.navigation a:hover {
+	background: darken(deepskyblue, 2%);
+}
+
+@media screen and (max-width: 800px) {
+	.navigation {
+		justify-content: space-around;
+
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.navigation {
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+
+	.navigation li:last-of-type a {
+		border-bottom: none;
+	}
+}
+
+/*panels for comics*/
+
+.flex-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-gap: 10px;
+	justify-content: center;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+
+}
+
+
+
